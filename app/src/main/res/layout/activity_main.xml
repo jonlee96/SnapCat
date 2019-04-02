@@ -7,92 +7,62 @@
     android:background="@drawable/snapcatbg"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/SnapCatTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SnapCat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.042" />
-
-    <TextView
-        android:id="@+id/helloWorldTextView"
-        android:layout_width="121dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="TextView"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.618" />
-
     <Button
         android:id="@+id/GalleryButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="172dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="59dp"
+        android:background="@drawable/galleryicon"
         android:onClick="onClickGallery"
-        android:text="Gallery"
-        app:layout_constraintEnd_toStartOf="@+id/FriendsButton"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/FriendsButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/helloWorldTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/FriendsButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="172dp"
-        android:layout_marginEnd="12dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="249dp"
+        android:layout_marginRight="249dp"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/friendsicon"
         android:onClick="onClickFriends"
-        android:text="Friends"
-        app:layout_constraintEnd_toStartOf="@+id/SendButton"
-        app:layout_constraintTop_toBottomOf="@+id/helloWorldTextView" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GalleryButton" />
 
     <Button
         android:id="@+id/RotateButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="32dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="63dp"
+        android:background="@drawable/rotateicon"
         android:onClick="onClickRotate"
-        android:text="Rotate"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/FriendsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/GalleryButton"
-        app:layout_constraintTop_toBottomOf="@+id/helloWorldTextView"
-        app:layout_constraintVertical_bias="0.993" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/SendButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="32dp"
         android:onClick="onClickSend"
         android:text="Send"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.932"
-        app:layout_constraintStart_toEndOf="@+id/RotateButton"
-        app:layout_constraintTop_toBottomOf="@+id/helloWorldTextView"
-        app:layout_constraintVertical_bias="0.993" />
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="667dp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -101,8 +71,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/helloWorldTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

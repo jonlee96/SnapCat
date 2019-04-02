@@ -9,9 +9,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
 import android.net.Uri;
-import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -34,16 +32,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Initialization of buttons
         Button sendButton =  findViewById(R.id.SendButton);
         Button galleryButton =  findViewById(R.id.GalleryButton);
         Button rotateButton =  findViewById(R.id.RotateButton);
         Button friendsButton =  findViewById(R.id.FriendsButton);
-        //ImageView named kittyCat
-        ImageView kittyCat = findViewById(R.id.imageView);
 
+        //ImageView named kittyCat (the main image to be upload from the gallery)
+        ImageView kittyCat = findViewById(R.id.imageView);
         kittyCat.setImageResource(R.drawable.bear);
         kittyCat.setVisibility(View.INVISIBLE);
-
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -64,8 +62,6 @@ public class MainActivity extends AppCompatActivity {
             ImageView kittyCat = findViewById(R.id.imageView);
             kittyCat.setImageBitmap(bitmap);
             kittyCat.setVisibility(View.VISIBLE);
-
-
         }
 
     }
@@ -76,9 +72,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickSend(View view)
     {
-        TextView hiText = findViewById(R.id.helloWorldTextView);
-        hiText.setText("Hello world from Send!");
-        hiText.setVisibility(View.VISIBLE);
+//        TextView hiText = findViewById(R.id.helloWorldTextView);
+//        hiText.setText("You have no friends right now! No one to send to :(");
+//        hiText.setVisibility(View.VISIBLE);
     }
 
     public void onClickRotate(View view)
