@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SnapCat</string>
+    <string-array name="nicknames">
+        <item>Fluffy</item>
+        <item>Mittens</item>
+        <item>Reginald</item>
+    </string-array>
+    <string-array name="idCodes">
+        <item>5661</item>
+        <item>8122</item>
+        <item>3346</item>
+    </string-array>
+</resources>
