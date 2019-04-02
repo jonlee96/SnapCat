@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
             }
             ImageView kittyCat = findViewById(R.id.imageView);
             kittyCat.setImageBitmap(bitmap);
+            kittyCat.setVisibility(View.VISIBLE);
 
 
         }
