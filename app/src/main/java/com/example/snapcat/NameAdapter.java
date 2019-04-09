@@ -36,6 +36,12 @@ public class NameAdapter extends BaseAdapter {
         return position;
     }
 
+    public void add(String a, String b)
+    {
+        nicknames.add(a);
+        ids.add(b);
+    }
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View v = mInflator.inflate(R.layout.friend_listview_detail,null);
