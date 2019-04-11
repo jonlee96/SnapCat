@@ -1,5 +1,7 @@
 package com.example.snapcat;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -72,9 +74,30 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickSend(View view)
     {
-//        TextView hiText = findViewById(R.id.helloWorldTextView);
-//        hiText.setText("You have no friends right now! No one to send to :(");
-//        hiText.setVisibility(View.VISIBLE);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Are you sure that this image contains a cat? Please be honest.");
+        builder.setCancelable(true);
+        builder.setPositiveButton(
+                "Yes I am sure.",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                }
+        );
+
+        builder.setNegativeButton(
+                "No I am a dirty liar.",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                }
+        );
+        AlertDialog alert = builder.create();
+        alert.show();
     }
 
     public void onClickRotate(View view)
